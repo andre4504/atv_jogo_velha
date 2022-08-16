@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Jogo da Velha | Tema </title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="externo.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <section id="titulo">
+
+        </section>
+    </header>
+
+    <nav>
+        <form action="#" method="dialog" name="opcao">
+            <br/>
+            <label id="selecione"> Selecione o oponente: </label> 
+            <br/><br/>         
+            <label class="bloco"><input type="radio" name="cpu" id="cpu" value="yes" checked required/>
+                Computador </label>
+                <label class="bloco"><input type="radio" name="cpu" id="player" value="no" required/>
+                Player 2 </label>
+        </form>
+    </nav>
+
+    <section class="inicio">
+        <form action="#" method="dialog" name="jogar">
+            <button type="submit" id="jogar" name="jogar" onclick="iniciojogo()"> JOGAR </button>
+        </form>
+    </section>
+
+    <article>
+
+        <table border="1" cellpadding="0" cellspacing="5">
+            <tbody>
+                <tr>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)"></td>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)"></td>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)"></td>
+                </tr>
+                <tr>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)"></td>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)"></td>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)"></td>
+                </tr>
+                <tr>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)"></td>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)"></td>
+                    <td><img class="imgp" src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </article>
+
+    <footer>
+        <form action="#" method="dialog" name="reiniciar">
+            <button onclick="location.reload()" id="restart" disabled>                   
+                REINICIAR
+            </button>
+        </form>
+    </footer>
+
+</body>
+
+</html>
